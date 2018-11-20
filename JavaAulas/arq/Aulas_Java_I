@@ -1,0 +1,44 @@
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 19 - 20/11/2018 - Terça-feira
+
+-- Revisão de polimorfismo.
+
+-- Dicionário de comentários do Eclipse em português: 
+https://microsan.wordpress.com/2013/03/01/corretor-ortografico-em-portugues-no-eclipse/
+https://stackoverflow.com/questions/4374210/how-to-install-a-platform-dictionary-in-eclipse
+
+Remover correções: Window -> Preferences -> Spelling -> Platform dictionary -> none 
+
+-- Tratamento de exceções
+https://www.caelum.com.br/apostila-java-orientacao-objetos/excecoes-e-controle-de-erros/
+
+TRY / CATCH
+
+Em alguns casos é obrigatório utilizar o try catch.
+
+Pilha de exceções: Olhar de baixo para cima. Todos os caminhos que geraram o problema serão listados.
+
+Clean Code: Livros
+
+ArrayIndexOutOfBoundsException: Exceção para a posição invalida do vetor.
+ArithmeticException: Para casos como a divisão por zero.
+Exception: Mais utilizado e mais genérico.
+
+As exceções são classes com heranças.
+
+* Quando precisa identificar o tipo de de objeto: instanceof
+
+- try..catch..finally : quando precisa executar algo independente de ter dado erro ou não.
+
+"magic numbers": retorno de numeros para tratar erros e etcs.
+
+System.exit(1); //Finaliza o programa 
+
+ 
+
+
+
+
+
+
+

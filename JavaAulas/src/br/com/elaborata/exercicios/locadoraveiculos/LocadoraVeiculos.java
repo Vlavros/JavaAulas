@@ -13,13 +13,35 @@ public class LocadoraVeiculos {
 
 		verValor(ferrari);
 		verValor(mercedes);
-		verValor(bmw);		
+		verValor(bmw);
+				
+		Veiculo veiculo[] = {ferrari,mercedes,bmw};
+		
+		reajustar(veiculo);
+		
+		verValor(veiculo[0]);
+		
 		
 	}
 	
 	public static void reajustar(Veiculo veiculo) {
 		veiculo.reajustarPrecoLocacao();
 	}
+	
+	public static void reajustar(Veiculo[] veiculo) {
+		/*
+		for (int i = 0; i < veiculo.length; i++) {
+			if (veiculo[i] != null) { //evitar acessar um método inválido
+				veiculo[i].reajustarPrecoLocacao();
+			}			
+		}
+		*/
+		
+		//for each - só funciona com listas/vetores
+		for(Veiculo v : veiculo) {
+			v.reajustarPrecoLocacao();
+		}
+	}	
 	
 	public static void verValor(Veiculo veiculo) {
 		System.out.println(veiculo.getPrecoLocacao());
