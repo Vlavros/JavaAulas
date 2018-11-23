@@ -1,4 +1,4 @@
-package br.com.elaborata.exercicio.formulario.imc;
+package br.com.elaborata.exercicios.formulario.imc;
 
 /**
  * Classifica��o IMC Criar um programa para mostrar na tela a classifica��o do

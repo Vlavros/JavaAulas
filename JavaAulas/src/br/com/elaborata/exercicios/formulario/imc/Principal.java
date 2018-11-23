@@ -1,4 +1,4 @@
-package br.com.elaborata.exercicio.formulario.imc;
+package br.com.elaborata.exercicios.formulario.imc;
 
 public class Principal {
 

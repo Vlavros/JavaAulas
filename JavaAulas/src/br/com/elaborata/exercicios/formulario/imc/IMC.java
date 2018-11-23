@@ -1,4 +1,4 @@
-package br.com.elaborata.exercicio.formulario.imc;
+package br.com.elaborata.exercicios.formulario.imc;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
