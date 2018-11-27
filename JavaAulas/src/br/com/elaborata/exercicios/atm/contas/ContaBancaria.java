@@ -1,5 +1,6 @@
 package br.com.elaborata.exercicios.atm.contas;
 
+
 public class ContaBancaria {
 	protected String banco;
 	protected String agencia;
@@ -11,12 +12,11 @@ public class ContaBancaria {
 	}
 	
 
-	public boolean sacar(Double valor) {
+	public void sacar(Double valor) throws Exception {
 		if(this.saldo >= valor) {
 			this.saldo += -valor;
-			return true;
 		} else {
-			return false;
+			throw new Exception("Saldo insuficiênte.");
 		}
 	}
 	

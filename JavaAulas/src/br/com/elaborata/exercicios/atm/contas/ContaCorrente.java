@@ -6,12 +6,11 @@ public class ContaCorrente extends ContaBancaria {
 	private int limite;
 	
 	@Override
-	public boolean sacar(Double valor) {
+	public void sacar(Double valor) throws Exception {
 		if((this.saldo + this.limite) >= valor) {
 			this.saldo += -valor;
-			return true;
 		} else {
-			return false;
+			throw new Exception("Saldo insuficiênte.");
 		}
 	}
 

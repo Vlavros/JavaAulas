@@ -9,7 +9,17 @@ public class CaixaATM {
 		cp.setNumero("007555");
 		cp.setSaldo(10000.0);
 		
-		boolean conseguiuSacar = cp.sacar(1000.0);
+		boolean conseguiuSacar;
+		
+		try {
+			cp.sacar(1000.0);
+			conseguiuSacar = true;
+			
+		} catch(Exception e) {
+			conseguiuSacar = false;
+		}
+		
+		
 		if(conseguiuSacar) {
 			System.out.println("Saque realizado!");
 		} else {
@@ -30,11 +40,13 @@ public class CaixaATM {
 		cc.setLimite(1000);
 		cc.setGerente("João Silva");
 		
+		/*
 		if(cc.sacar(5500.0)){
 			System.out.println("Saque realizado.");
 		} else {
 			System.out.println("Saque não realizado. Saldo insuficiente");
 		}
+		*/
 		
 		
 			
