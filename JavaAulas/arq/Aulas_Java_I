@@ -74,8 +74,21 @@ java itext -> report mais simples
 Jasper Reports -> relatórios mais elaborados
 jfreechart -> graficos
 
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 24 - 27/11/2018 - Terça-feira
 
+-- Criação de formulário de login
+-- Tratamento de dados
+-- Combobox / Seleções de dados
 
+https://docs.oracle.com/javase/tutorial/uiswing/components/button.html
+
+ctr+t = Mostrar a hierarquia do objeto
+
+cmbComboBox.getSelectedItem().toString() vs txtSenha.getPassword().toString()
+
+getSelectedItem() -> pega um objeto
+getPassword() -> Pega um char
 
 
 
