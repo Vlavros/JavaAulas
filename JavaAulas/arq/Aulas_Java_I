@@ -90,6 +90,31 @@ cmbComboBox.getSelectedItem().toString() vs txtSenha.getPassword().toString()
 getSelectedItem() -> pega um objeto
 getPassword() -> Pega um char
 
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 25 - 28/11/2018 - Quarta-feira
+
+- Exercício registrar atendimento
+
+- MVC
+Usar sufixos Model/View
+
+- DAO - data access object
+
+- CRUD
+
+View (tela do usuário) / Model / Controller / DAO
+
+[V] <- [M]
+ |
+[C] -> [DAO]
+
+SOA / Microservices / Cloud
+
+
+
+
+
+
 
 
 
