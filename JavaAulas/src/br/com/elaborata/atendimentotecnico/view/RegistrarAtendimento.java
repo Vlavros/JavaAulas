@@ -42,6 +42,7 @@ public class RegistrarAtendimento extends JFrame {
 	/**
 	 * Launch the application.
 	 */
+/*
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -54,13 +55,14 @@ public class RegistrarAtendimento extends JFrame {
 			}
 		});
 	}
-
+*/
 	/**
 	 * Create the frame.
 	 */
 	public RegistrarAtendimento() {
 		setTitle("Registrar Atendimento Técnico");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 343);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
