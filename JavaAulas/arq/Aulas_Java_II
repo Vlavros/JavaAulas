@@ -1,0 +1,32 @@
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 01 - 30/11/2018 - Sexta-feira
+
+Professor: Alexandre Zanatta Vieira
+Turma: 10923
+
+Instalar bracketeer / EGit / windowbuilder
+
+< > = Operador diamante
+
+for (Integer i : lista) { //for iterator
+
+Box e Unbox -> Java faz automaticamente : auto-boxing e auto-unboxing
+
+Há linguagens que o box e unbox dos tipos primitivos não é feito automaticamente
+
+Classe wrapper
+
+LinkedList x ArrayList - Questão de velocidade
+Linked -> Mais para consulta - ao inserir demora mais, pois salva em lugares especificos
+Array -> Mais para inserção - salva em qualquer lugar da memoria, por isso salva mais rapido
+
+.clear() -> limpar memória
+
+First Child / Last Child
+
+Collections.sort(a); x Arrays.sort(a);
+
+Hash -> Nâo repete elementos
+
+Mapas -> Listas com chave e valor
+
