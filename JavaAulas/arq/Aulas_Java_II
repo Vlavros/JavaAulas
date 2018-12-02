@@ -30,3 +30,19 @@ Hash -> NÃ¢o repete elementos
 
 Mapas -> Listas com chave e valor
 
+------------------------------------------------------------------------------------------------------------------------
+*** Estudo 02/12/2018
+
+-- https://dzone.com/articles/arraylist-vs-linkedlist-vs
+Aparentemente é ao contrário do que foi visto em aula, Linked é melhor em adicionar elementos e Array para get
+
+-- XML:
+https://xmlwriter.net/xml_guide/xml_declaration.shtml
+https://docs.microsoft.com/pt-br/previous-versions/ms256048(v=vs.110)
+https://www.w3schools.com/xml/xml_dtd_intro.asp
+http://www.c4learn.com/xml/xml-documents-structure/
+https://spin.atomicobject.com/2010/09/01/working-with-embedded-cdata-in-xml-documents/
+http://www.tizag.com/xmlTutorial/xmlprolog.php
+
+
+

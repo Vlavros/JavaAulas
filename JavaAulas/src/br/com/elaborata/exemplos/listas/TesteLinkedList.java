@@ -6,7 +6,7 @@ public class TesteLinkedList {
 
 	public static void main(String[] args) {
 		//Integer
-		LinkedList<Integer> lista = new LinkedList<Integer>(); //Poucas inserções e muitas buscas
+		LinkedList<Integer> lista = new LinkedList<Integer>();
 		
 		lista.add(10);
 		lista.add(20);
