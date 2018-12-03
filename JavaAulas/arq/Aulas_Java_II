@@ -34,7 +34,7 @@ Mapas -> Listas com chave e valor
 *** Estudo 02/12/2018
 
 -- https://dzone.com/articles/arraylist-vs-linkedlist-vs
-Aparentemente � ao contr�rio do que foi visto em aula, Linked � melhor em adicionar elementos e Array para get
+Aparentemente � ao contr�rio do que foi visto em aula, Linked � melhor em adicionar elementos e Array para get
 
 -- XML:
 https://xmlwriter.net/xml_guide/xml_declaration.shtml
@@ -43,6 +43,57 @@ https://www.w3schools.com/xml/xml_dtd_intro.asp
 http://www.c4learn.com/xml/xml-documents-structure/
 https://spin.atomicobject.com/2010/09/01/working-with-embedded-cdata-in-xml-documents/
 http://www.tizag.com/xmlTutorial/xmlprolog.php
+
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 02 - 03/12/2018 - Segunda-feira
+
+-- Revisão Java Básico
+
+-- Herança x Polimorfismo
+
+Coerção (Type cast): Mudança de um tipo de variável para outro Ex.: float to int
+Promoção: Elevar o tipo de variável, não precisa do cast. Ex.: int to float
+
+- Boxing e Unboxing
+int (tipo primitivo) -> Integer (classe empacotadora)
+Integer i = new Integer(10) -> Boxing da classe primitiva
+int b = i,getInt() -> Unboxing
+Integer i =10 -> Auto boxing
+
+- Herança
+superclasse (classe pai) / subclasse (classe filho)
+super.metodo()
+extends -> herança declarada
+Java não permite herança multiplas
+super() -> para acessar a classe pai com this - usar no construtor
+
+memórias: heap /stack
+https://pt.stackoverflow.com/questions/3797/o-que-s%C3%A3o-e-onde-est%C3%A3o-o-stack-e-heap
+
+linguagem progress
+
+private e ecapsulamente serve para proteger o programador dele mesmo
+private x protected
+
+- Classes abstratas
+
+-- Tarefa de casa: Classe abstrata Mensagem / Classe Filha MensagemVoz / Classe Filha MensagemTexto / Classe Filha MensagemVideo
+- Instanciar 3 objetos / Quando chamar o envia objeto mostrar a mensagem correspondente
+- 4 classes
+1 classe abstrata
+1 metodo generico envia mensagem
+classes filhas implementar o metodo envia mensagem
+Emissor, destinatario, titulo
+
+metodo concreto x metodo abstrato
+
+
+
+
+
+
+
+
 
 
 

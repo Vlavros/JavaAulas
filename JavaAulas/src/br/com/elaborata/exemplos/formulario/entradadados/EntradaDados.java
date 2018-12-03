@@ -18,13 +18,14 @@ import java.util.Arrays;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JList;
 
 public class EntradaDados {
 
 	private JFrame frame;
 	private JPasswordField txtSenha;
 	private JTextField txtTexto;
-	private JTextArea textArea;
+	private JTextArea txtrDffdfdsFdSfdsfd;
 	private JLabel lblTexto;
 	private JLabel lblSenha;
 	JComboBox comboBox;
@@ -57,7 +58,7 @@ public class EntradaDados {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 624, 296);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -87,8 +88,9 @@ public class EntradaDados {
 		scrollPane.setBounds(28, 158, 379, 85);
 		frame.getContentPane().add(scrollPane);
 		
-		textArea = new JTextArea();
-		scrollPane.setViewportView(textArea);
+		txtrDffdfdsFdSfdsfd = new JTextArea();
+		txtrDffdfdsFdSfdsfd.setText("dffd]fds\nfd\nsfdsfd\nsfd\nfsd\nsfd\nsfd\nsfd\nsdf\nsfd\nsfd\nsfd\nsfd\nsfsfd");
+		scrollPane.setViewportView(txtrDffdfdsFdSfdsfd);
 		
 		JButton btnMostrar = new JButton("Mostrar...");
 		btnMostrar.addActionListener(new ActionListener() {
@@ -104,12 +106,19 @@ public class EntradaDados {
 		comboBox.setSelectedIndex(1);
 		comboBox.setBounds(166, 12, 122, 24);
 		frame.getContentPane().add(comboBox);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(434, 12, 86, 193);
+		frame.getContentPane().add(scrollPane_1);
+		
+		JTextArea textArea = new JTextArea();
+		scrollPane_1.setViewportView(textArea);
 	}
 	
 	private void mostrarDados(){
 		String conteudoTexto = txtTexto.getText();
 		String conteudoSenha = txtSenha.getPassword().toString();
-		String conteudoArea = textArea.getText();
+		String conteudoArea = txtrDffdfdsFdSfdsfd.getText();
 		String cmbText = (String) comboBox.getSelectedItem();//comboBox.getItemAt(comboBox.getSelectedIndex());
 				
 		//txtTexto.setText(conteudoSenha);
