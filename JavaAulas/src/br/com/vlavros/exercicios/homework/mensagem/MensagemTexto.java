@@ -19,5 +19,20 @@ public class MensagemTexto extends Mensagem {
 		System.out.println("Mensagem de texto enviada para: " + super.getReceptor());
 		System.out.println("Mensagem de texto: " + this.msgTexto);		
 	}
+	
+	public void enviarMensagem(String msgTexto) {
+		System.out.println("Mensagem de texto enviada para: " + super.getReceptor());
+		System.out.println("Mensagem de texto: " + msgTexto);		
+	}
+
+	public String getMsgTexto() {
+		return msgTexto;
+	}
+
+	public void setMsgTexto(String msgTexto) {
+		this.msgTexto = msgTexto;
+	}
+	
+	
 
 }
