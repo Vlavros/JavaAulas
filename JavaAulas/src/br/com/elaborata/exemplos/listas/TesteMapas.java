@@ -14,6 +14,7 @@ public class TesteMapas {
 		map.put("tni", "Tec Negócios Imbobiliários");
 		map.put("ts", "Tec Secretariado");
 		map.put("tci", "Tec Comunicação Institucional");
+		map.put("tci", "Tec Comunicação Institucional A");
 		
 		System.out.println(map.get("tgq"));
 		System.out.println(map.get("xxx")); //Não gera erro em list geraria

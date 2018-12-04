@@ -87,6 +87,38 @@ Emissor, destinatario, titulo
 
 metodo concreto x metodo abstrato
 
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 03 - 04/12/2018 - Terça-feira
+
+Openstack
+eof -> end of file
+MVC: Model / View / COntrol
+MVVM: Padrão android
+
+facade: Mascara a entrada de dados para o model ou a existencia do banco para a view
+
+-- Design Patterns
+resolver problema que acontece com frequencia
+melhorar integração da equipe
+levantar os problemas e o que deve fazer e então escolher o design patterns
+- Creational / Structural / Behavioral
+
+Singleton: Classe que só pode ser instanciada uma vez | 1 objeto
+
+-- Structural: 
+Quando a parte View e Model não se conversam | usando o facade | facade -> um tipo de structural design patters
+Facade: interface unica para os subconjuntos se conectarem
+- Para uma equipe trabalhar mais facilmente
+
+MVC: Não é um design pattern
+
+-- Behavioral: Padrões menos comuns
+Observer: Usando mais com threads
+Strategy: Classe para encapsular um algoritmo que resolve um mesmo problema
+
+
+
+
 
 
 
