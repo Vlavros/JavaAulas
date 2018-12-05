@@ -117,6 +117,20 @@ Observer: Usando mais com threads
 Strategy: Classe para encapsular um algoritmo que resolve um mesmo problema
 
 
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 04 - 05/12/2018 - Sexta-feira
+
+HashMap //Rapido para inserção
+LinkedHashMap //Rapido leitura
+
+https://stackoverflow.com/questions/8689725/map-entry-how-to-use-it
+
+-- Tarefa casa
+- Ao clicar na barra de ferramentas abrir uma janela dentro do form principar (JinternalFrame)
+Formulario de cadastro de cliente
+Upload de arquivo
+Messenger
+
 
 
 
