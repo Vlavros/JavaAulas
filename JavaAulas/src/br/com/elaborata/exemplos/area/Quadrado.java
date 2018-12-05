@@ -12,4 +12,9 @@ public class Quadrado extends FiguraGeometrica {
 		return super.getLinha() * super.getLinha();
 	}
 
+	@Override
+	public String mostrarFormula() {
+		return "(" + super.getLinha()  + " x " + super.getLinha() + ")";
+	}
+
 }

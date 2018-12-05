@@ -11,4 +11,9 @@ public class Circulo extends FiguraGeometrica {
 		return Math.pow(Math.PI*super.getLinha(), 2);
 	}
 
+	@Override
+	public String mostrarFormula() {
+		return "(" + Math.PI + " x " + super.getLinha() + ") ^ 2";
+	}
+
 }

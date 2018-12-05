@@ -9,6 +9,8 @@ public abstract class FiguraGeometrica {
 	}
 	
 	public abstract double calcularArea();
+	
+	public abstract String mostrarFormula();
 
 	public double getLinha() {
 		return linha;

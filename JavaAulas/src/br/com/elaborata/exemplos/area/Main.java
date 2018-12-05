@@ -1,7 +1,8 @@
 package br.com.elaborata.exemplos.area;
 
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -11,8 +12,19 @@ public class Main {
 		
 		//FiguraGeometrica circulo = new Circulo();
 		
-		Map<Integer, FiguraGeometrica> map = new HashMap<Integer, FiguraGeometrica>();
-		FiguraGeometrica figura;
+		Map<Integer, ArrayList<FiguraGeometrica>> map = new HashMap<Integer, ArrayList<FiguraGeometrica>>();
+		ArrayList<FiguraGeometrica> figura;
+		
+		/*
+		figura = new ArrayList<FiguraGeometrica>();
+		map.put(1, figura);
+		figura = new ArrayList<FiguraGeometrica>();
+		map.put(2, figura);
+		figura = new ArrayList<FiguraGeometrica>();
+		map.put(3, figura);
+		*/
+		
+		figura = null;
 		
 		int opcao = 0;
 		double linha = 0, altura = 0;
@@ -28,18 +40,21 @@ public class Main {
 			
 			opcao = scanner.nextInt();
 			
+			figura = map.get(opcao);
+			if(figura == null) 	figura = new ArrayList<FiguraGeometrica>();
+			
 			switch (opcao) {
 			case 1:
 				System.out.println("Informe o raio do circulo: ");
 				linha = scanner.nextDouble();
-				figura = new Circulo(linha);
+				figura.add(new Circulo(linha));
 				map.put(opcao, figura);
 				break;
 				
 			case 2:
 				System.out.println("Informe o tamanho dos lados do quadrado: ");
 				linha = scanner.nextDouble();
-				figura = new Quadrado(linha);
+				figura.add(new Quadrado(linha));
 				map.put(opcao, figura);
 				break;				
 				
@@ -47,8 +62,8 @@ public class Main {
 				System.out.println("Informe o comprimento do triangulo: ");
 				linha = scanner.nextDouble();
 				System.out.println("Informe a altura do triangulo: ");
-				altura = linha = scanner.nextDouble();
-				figura = new Triangulo(linha,altura);
+				altura = scanner.nextDouble();
+				figura.add(new Triangulo(linha,altura));
 				map.put(opcao, figura);				
 				break;
 				
@@ -65,12 +80,22 @@ public class Main {
 		
 		scanner.close();
 		
-		/*
-		for (Map.Entry<String, String> entry : map.entrySet())
-		{
-		    System.out.println(entry.getKey() + "/" + entry.getValue());
+		for (Map.Entry<Integer, ArrayList<FiguraGeometrica>> entry : map.entrySet()) {
+			System.out.print(entry.getKey());
+			if(entry.getKey() == 1) {
+				System.out.println(" - Circulo");
+			} else if(entry.getKey() == 2) {
+				System.out.println(" - Quadrado");
+			} else if(entry.getKey() == 3) {
+				System.out.println(" - Triangulo");
+			}
+			figura = entry.getValue();
+			for(FiguraGeometrica f : figura) {
+				System.out.print(f.mostrarFormula() + " = ");
+				System.out.println(f.calcularArea());
+			}
+			
 		}
-		*/
 		
 	}
 

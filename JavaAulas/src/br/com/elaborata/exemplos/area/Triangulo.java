@@ -14,4 +14,9 @@ public class Triangulo extends FiguraGeometrica {
 		return (this.altura * super.getLinha())/2;
 	}
 
+	@Override
+	public String mostrarFormula() {
+		return "(" + this.altura + " x " + super.getLinha() + ")/2" ;
+	}
+
 }
