@@ -118,7 +118,7 @@ Strategy: Classe para encapsular um algoritmo que resolve um mesmo problema
 
 
 ------------------------------------------------------------------------------------------------------------------------
-*** Aula 04 - 05/12/2018 - Sexta-feira
+*** Aula 04 - 05/12/2018 - Quarta-feira
 
 HashMap //Rapido para inserção
 LinkedHashMap //Rapido leitura
@@ -131,15 +131,64 @@ Formulario de cadastro de cliente
 Upload de arquivo
 Messenger
 
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 05 - 06/12/2018 - Quinta-feira
 
+-- JDBC - API de acesso a banco de dados
+https://www.devmedia.com.br/jdbc-tutorial/6638
 
+-- Banco de dados
 
+Pacote: java.sql.*
 
+- Drivers de acesso
+Dois tipos de drive
+JDBC-ODBC / JDBC Puro
 
+https://www.devmedia.com.br/algebra-relacional-parte-i/2663
+Linguagem relacional x orientada a objeto
 
+Tupla: http://excript.com/python/tuplas-python.html
+https://stackoverflow.com/questions/2670982/using-pairs-or-2-tuples-in-java
 
+https://www.liquidweb.com/kb/mysql-performance-myisam-vs-innodb/
+engine mysql innodb
 
+MySQL Workbench
 
+create database aula;
 
+use aula;
+
+create table cliente(
+	cd_cliente serial primary key,
+    nm_cliente varchar(50) not null,
+    cpf varchar(14) not null unique,
+    dt_nascimento date,
+    nro_teste numeric(4,2),
+    endereco text
+);
+
+INSERT INTO cliente VALUES(1,'NOME TESTE','065.888.999-37',20001207,10.5,'TESTE TESTE TESTE TESTE TESTE TESTE');
+
+INSERT INTO cliente (nm_cliente,cpf,dt_nascimento,nro_teste,endereco)
+VALUES ('NOME DOIS TESTE','555.888.777-37',19880509,2.8,'Rua A');
+
+INSERT INTO cliente (nm_cliente,cpf,dt_nascimento,nro_teste,endereco)
+VALUES ('NOME TESTE TRES','111.111.111-11',19501230,5.1,'Rua B');
+
+INSERT INTO cliente (nm_cliente,cpf,dt_nascimento,nro_teste,endereco)
+VALUES ('NOME TESTE 4','888.888.888-88',19630118,5.1,'Rua C');
+
+INSERT INTO cliente (nm_cliente,cpf,dt_nascimento,nro_teste,endereco)
+VALUES ('NOME TESTE 4','747.747.747-74',19630118,5.1,'Rua C'), ('NOME TESTE TRES','545.545.545-55',19501230,5.1,'Rua B');
+
+sql wildcard
+https://www.w3schools.com/sql/sql_wildcards.asp
+
+safe mysql
+https://www.mkyong.com/mysql/cant-delete-records-in-mysql-workbench/
+
+Exercicio homework: Criar uma nova tabela
 
 
