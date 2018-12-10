@@ -189,6 +189,51 @@ https://www.w3schools.com/sql/sql_wildcards.asp
 safe mysql
 https://www.mkyong.com/mysql/cant-delete-records-in-mysql-workbench/
 
-Exercicio homework: Criar uma nova tabela
+Exercicio homework: Criar uma nova tabela: departamento
+Chave, nome, tipo departamento
+
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 07 - 06/12/2018 - Sexta-feira
+Conexões com banco de dados.
+
+https://www.devmedia.com.br/criando-uma-conexao-java-mysql-server/16753
+
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 08-JII - 10/12/2018 - Segunda-feira
+
+Janelas com orquestrador.
+
+DAO: Data Access Object | Classe que faz a conexão com o banco de dados
+- só para afzer o insert/update/select
+- para validações, como validar cpf, não é utilizado o dao
+
+JavaBean (POJO): Classes feitas para armazenar dados | gets/sets
+
+POJO implements Serializable
+- atributos privados
+- contrutor
+- todos hetters e setters - publicos
+
+modificador "interface"
+- Se eu tenho um bean Pessoa logo interface -> PessoaDAO
+- contém os métodos de PessoaDAOImpl
+- para trabalhar com o banco de dados - acesso da interface
+
+class PessoaDAOImpl implements PessoaDAO
+- 
+
+Pacotes divididos:
+DAO:
+- Classe CLienteDAO
+TO - transfer object
+- Classe CLiente - bean de cliente
+ConnectorFactory
+- Classe ConnectionFactory
+
+Apresentação do objeto?
+
+ConnectorFactory
+
+/aula, "root", "elaborata"
 
 
