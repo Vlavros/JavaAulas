@@ -296,6 +296,31 @@ this. x qualificação categorias (colocar p em parametros em code style)
 
 renomear variaves em cascata
 
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 10-JII - 13/12/2018 - Quinta-feira
+
+Code Conventions
+Padrão de qualificação  | Code Style
+
+Model é dados que o sistema manipula - geralmente ligados a tabelas do sistema.
+
+Interface java.util.Comparable -> ordenação
+
+Serializable - ficar em socket
+
+alt+shift+r = renomear em vários lugares
+
+Extract Method -> Transformar trexo de código em um metodo
+
+Window -> Show View -> Outline = Organizar e visualizar metodos
+
+ 
+
+
+
+
+
+
 
 
 
