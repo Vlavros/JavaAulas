@@ -242,6 +242,62 @@ Aula adiada.
 
 ------------------------------------------------------------------------------------------------------------------------
 *** Aula 09-JII - 12/12/2018 - Quarta-feira
-Novo professor.
+Novo professor: José Augusto Martins Nieviadonski
+
+- Google Drive
+Instalar SQuirrel - Cliente SQL
+db-derby -> Banco de dados
+monospaced Arial
+
+Sequencia conteudo da apostila: (planejamento dos capítulos)
+MVC / 13 / 14 / Interface / 4 / 7 / 8 9 10 / 6 / 5 / 1 / 2 / 3 / 11 / 12 
+
+- MVC = Model/View/Controller
+Conceito/padrão indepente de linguagem
+Separar as funcionalidades do código
+
+VIEW -> CONTROLLER -> MODEL
+https://commons.wikimedia.org/wiki/File:MVC_Diagram_(Model-View-Controller).svg
+
+ --- BUSINESS TIER ---  | ----- INFRA TIER ------
+-- CAMADA DO SISTEMA -- | --CAMADA INFRAESTRUTURA--
+VIEW ------ CONTROLLER  |
+  \            /		|
+   \          /			|    DAO - Data Access Object
+    \        /			|         (Como)
+      MODEL				|    Autenticação/Autorização (LDAP)
+
+Model: Objetos do sistema - Dados que o sistema manipula | Java -> Classes
+
+View.: Interface de comunicação do sistema com o mundo exterior não necessáriamente com o usuário - com um sistema externo - 
+- Exemplos: Tela Swing | Páginas HTML | Importação/Exportação de Dados | Web Services | Comunicação TCP/IP (Sockets, SMTP/MAIL, FTP)
+- JSP / JSF
+
+Controller: Processos do sistema. -> 80% da complexidade do sistema
+- Regras de negócio
+
+Exercício: Sistema de Agenda e Contato
+** Contato
+- Id
+- Telefone - Valor Único
+- Nome Cmpleto
+- Email
+- Endereço
+** Agenda
+- Id
+- Data
+- Hora Início
+- Duração
+- Evento
+
+
+this. x qualificação categorias (colocar p em parametros em code style)
+
+
+renomear variaves em cascata
+
+
+
+
 
 
