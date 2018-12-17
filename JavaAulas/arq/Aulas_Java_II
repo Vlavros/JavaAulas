@@ -314,7 +314,73 @@ Extract Method -> Transformar trexo de código em um metodo
 
 Window -> Show View -> Outline = Organizar e visualizar metodos
 
- 
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 11-JII - 14/12/2018 - Sexta-feira
+
+Rever / Levntar
+
+Esquema de validação
+
+tipos primitivos e wrappers
+
+------------------------------------------------------------------------------------------------------------------------
+*** Aula 12-JII - 17/12/2018 - Segunda-feira
+
+CRUDSC
+[C] Create - incluir o registro na base de dados
+[R] Recovery/READ - Recuperar UM registro - Chave primária
+[U] Update - Atualizar as informações existentes
+[D] Delete - Remover o registro existente
+[S] Search - Pesquisar a base de dados usando um ou MAIS critérios obtendo registroS
+[C] Count - Retorna a quantidade com um ou mais critérios
+
+CERAPX
+[C] - CRIAR
+[E] - Excluir
+[R] - Recuperar
+[A] - Atualizar
+[P] - Pesquisar
+[C] - Contar
+
+Quem implementa o CRUD é o DAO.
+DAO - Data Access Object -> Realiza a persistência e instanciação do Model.
+	Implementa o como fazer a persistencia e instanciação
+
+Persistência: COlocar os dados do objeto em uma base de dados | Persistir: Os dados é desligar a máquina e os dados continuarem.
+Instanciação: Criar um objeto usando os dados da base de dados
+
+Padrão de Projeto / Design Patterns: Soluções aprovadas para determinado
+Livro de design patterns
+
+-- Manipulação de arquivos: Java I/O (JAVA I/O não é só arquivos - lê/grava dados em STREAMS)
+* 3 camadas:
+-Funcionalidade Básica
+-Meio Físico
+-Operações lógicas
+
+Operações sobre arquivos: Criar / Remover / Renomear / Mover
+Operações sobre os dados: Abrir, Inserir, Atualizar, Remover, Ler, Fechar
+
+- 4 classes fundamentais: (Operações sobre os dados) - Camada Primária com funcionalidades básicas
+Arquivos Binários: InputStream / OutputStream (Leitura / Gravação)
+Arquivos Texto: Reader / Writer (Leitura / Gravação)
+
+Padrão decorator
+Na criação da terceira camada usar o objeto da segunda camada // decorar -> FileWriter + BufferedWriter
+
+Build Path -> Vincular dois projetos
+
+{
+//Codigo de inicialização do objeto
+// é executado antes de qualquer construtor
+}
+
+static {
+//código de inicialização estático
+//será executado somente uma vez quando o arquivo .class é carregado na máquina virtual
+}
+
+
 
 
 
